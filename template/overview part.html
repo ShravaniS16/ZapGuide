@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview of Electric Car Services</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Font Awesome for icons -->
+    <style>
+        /* General reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background-color: #0A0B0D; /* Dark background */
+            color: #EAEAEA; /* Light text color */
+            padding: 20px;
+            overflow: hidden; /* Prevent scrolling */
+        }
+
+        /* Overview Section */
+        .overview-section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px; /* Reduced padding */
+            background-color: #1A1B1D; /* Darker section background */
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            margin: 20px auto; /* Reduced margin */
+            max-width: 1200px; /* Centering the section */
+            height: calc(100vh - 40px); /* Fill the viewport height */
+        }
+
+        .overview-section:hover {
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Left section for content */
+        .overview-text {
+            flex: 1;
+            padding-right: 20px;
+            overflow-y: auto; /* Allow scrolling within text if needed */
+        }
+
+        .overview-text h2 {
+            font-size: 28px; /* Adjusted font size */
+            color: #00A3E0; /* Bright blue */
+            margin-bottom: 15px; /* Adjusted margin */
+            transition: color 0.3s ease;
+        }
+
+        .overview-text h2:hover {
+            color: #00BFFF; /* Lighter blue on hover */
+        }
+
+        .overview-text p {
+            font-size: 16px; /* Adjusted font size */
+            line-height: 1.5; /* Adjusted line height */
+            color: #B0B0B0; /* Grey text */
+            margin-bottom: 15px; /* Adjusted margin */
+            animation: fadeIn 0.5s ease-in-out; /* Fade in animation */
+        }
+
+        .overview-text a {
+            display: inline-block;
+            padding: 10px 20px; /* Adjusted padding */
+            background-color: #00A3E0; /* Bright blue button */
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 30px;
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .overview-text a:hover {
+            background-color: #00BFFF; /* Lighter blue on hover */
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Right section for image */
+        .overview-image {
+            flex: 1;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .overview-image img {
+            width: 100%;
+            height: auto; /* Adjust height to maintain aspect ratio */
+            border-radius: 15px;
+            object-fit: cover; /* Cover the area without distortion */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .overview-image img:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        /* Keyframes for animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .overview-section {
+                flex-direction: column;
+                padding: 20px; /* Adjusted padding */
+                height: auto; /* Allow height to auto adjust */
+            }
+
+            .overview-text {
+                padding-right: 0;
+                margin-bottom: 20px; /* Adjusted margin */
+            }
+
+            .overview-image {
+                padding-left: 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Overview Section -->
+    <div class="overview-section">
+        <!-- Text Content -->
+        <div class="overview-text">
+            <h2>An Overview of Electric Car Services</h2>
+            <p>Explore our premium electric car services designed to maximize your vehicle's performance and longevity. We specialize in comprehensive maintenance, including battery health assessments, software updates, and advanced diagnostics. Our skilled technicians use state-of-the-art technology to provide precise and reliable solutions tailored to your EV’s needs. Whether you require routine check-ups or specialized repairs, we ensure a seamless and efficient service experience, enhancing your electric vehicle ownership with exceptional care and innovation.</p>
+            <p>With a focus on sustainability and innovation, we use state-of-the-art technology to service your car, making your electric vehicle ownership experience hassle-free.</p>
+            <a href="Servicesfhtml.html" target="_blank">Learn More About Our Services</a>
+        </div>
+
+        <!-- Image Section -->
+        <div class="overview-image">
+            <!-- Make sure the image path is correct -->
+            <img src="car photo.png" alt="Electric Car Service Overview">
+        </div>
+    </div>
+
+</body>
+</html>

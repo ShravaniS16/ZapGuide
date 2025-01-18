@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - ZapGuide</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif; /* Better font for readability */
+            margin: 0;
+            padding: 0;
+            background-color: #0e0e0e; /* Dark background for contrast */
+            color: #fff; /* White text color for readability */
+        }
+
+        h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Section */
+        .header {
+            background-color: #003366; /* Dark blue color */
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            font-style: italic;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            filter: brightness(70%);
+        }
+
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .hero-text h2 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        .hero-text p {
+            font-size: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        /* Alternate Image-Text Section */
+        .alternate-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem 2rem;
+            gap: 1rem;
+            transition: transform 0.3s ease-in-out;
+            background-color: #1a1a1a; /* Dark background for contrast */
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+            margin: 2rem 0;
+        }
+
+        .alternate-section:hover {
+            transform: scale(1.02); /* Slight zoom on hover */
+        }
+
+        .alternate-section img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            transition: filter 0.3s ease;
+        }
+
+        .alternate-section img:hover {
+            filter: brightness(90%);
+        }
+
+        .alternate-section .content {
+            max-width: 500px;
+            text-align: left; /* Left-align text */
+        }
+
+        .alternate-section h2 {
+            color: #00ccff; /* Light blue color */
+            margin-bottom: 1rem;
+            font-size: 2rem; /* Larger font size for headers */
+        }
+
+        .alternate-section p {
+            line-height: 1.6;
+            color: #ccc; /* Light gray for better readability */
+            font-size: 1.1rem; /* Slightly larger font size for readability */
+        }
+
+        /* Why Electric Cars Section */
+        .why-ev {
+            background-color: #003366; /* Dark blue background */
+            padding: 4rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.5rem; /* Closer gap between the text and image */
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            margin: 2rem 0; /* Margin for spacing */
+        }
+
+        .why-ev h2 {
+            color: #00ccff; /* Light blue color */
+            margin-bottom: 1rem;
+            font-size: 2.5rem; /* Larger font size for headers */
+        }
+
+        .why-content {
+            max-width: 600px; /* Adjusted for better width */
+            line-height: 1.6;
+            font-size: 1.2rem;
+            text-align: left; /* Left-align text */
+            color: #ccc; /* Light gray for better readability */
+        }
+
+        .why-ev img {
+            max-width: 400px;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .why-ev img:hover {
+            filter: brightness(90%);
+        }
+
+        /* Customer Support Section */
+        .customer-support {
+            font-size: 1rem;
+            padding: 2rem 0.5rem;
+            text-align: center; /* Center-align the text */
+            margin: 2rem 0;
+        }
+
+        .customer-support h2 {
+            font-size: 2rem; /* Larger font size for headers */
+            margin-bottom: 1rem;
+            color: #00ccff; /* Light blue color */
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: #003366; /* Dark blue color */
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem; /* Margin to separate from the content above */
+        }
+
+        .footer-links {
+            margin-top: 1rem;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #00ccff; /* Lighter blue color */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .alternate-section {
+                flex-direction: column;
+                align-items: center; /* Center items in smaller screens */
+            }
+
+            .why-ev {
+                flex-direction: column; /* Stack items in smaller screens */
+                text-align: center; /* Center text */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Section -->
+    <section class="hero">
+        <img src="EV2.jpg" alt="ZapGuide Hero" class="hero-image">
+        <div class="hero-text">
+           
+            <h2>ZapGuide
+            </h2><BR>
+                <p>NAVIGATE CHARGE DRIVE GREEN</p>
+        </div>
+    </section>
+
+    <!-- Alternate Image-Text Section 1 -->
+    <section class="section-container">
+        <div class="alternate-section">
+            <img src="PORT1.jpg" alt="Charging Station">
+            <div class="content">
+                <h2>Find Charging Locations</h2>
+                <p>With ZapGuide, locating nearby charging stations is easier than ever. Simply input your location, and we’ll guide you to the nearest point of service.</p>
+            </div>
+        </div>
+    </section>
+  
+    <!-- Alternate Image-Text Section 2 -->
+    <section class="section-container">
+        <div class="alternate-section">
+            <img src="m1.jpg" alt="EV Maintenance">
+            <div class="content">
+                <h2>EV Maintenance Services</h2>
+                <p>We provide access to trusted EV maintenance services. Get real-time service updates and make appointments at the best garages in your area.</p>
+            </div>
+        </div>
+    </section>
+  
+    <!-- Alternate Image-Text Section 3 -->
+    <section class="section-container">
+        <div class="alternate-section">
+            <img src="s1.jpg" alt="Support">
+            <div class="content">
+                <h2>24/7 Customer Support</h2>
+                <p>Our support team is available around the clock to assist you with any issues related to EV charging or maintenance. We're just one call away!</p>
+            </div>
+        </div>
+    </section>
+  
+    <!-- Why Electric Cars Section -->
+    <section class="why-ev">
+        <div class="why-content">
+            <h2>Why Electric Cars?</h2>
+            <p>Electric vehicles (EVs) are the future of transportation. They offer a cleaner, more sustainable alternative to traditional vehicles. EVs reduce carbon emissions, help combat climate change, and provide a quiet, smooth driving experience.</p>
+        </div>
+        <div>
+            <img src="CAR1.jpg" alt="EV Charging Station">
+        </div>
+    </section>
+
+    <!-- Customer Support Section -->
+    <section class="customer-support">
+        <h2>Customer Support</h2>
+        <p>We are committed to providing exceptional customer service. If you have any questions or need assistance, don't hesitate to contact us!</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 ZapGuide. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </footer>
+</body>
+</html>

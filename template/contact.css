@@ -1,0 +1,227 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+
+.nav-bar{
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-bar:hover{
+    color: #00ccff;
+}
+
+
+.header {
+    background-color: #005580;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.header nav ul li a:hover {
+    color: #00ccff;
+}
+
+/* Hero Section */
+.contact-hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text h2 {
+    font-size: 3rem;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+}
+
+/* Contact Form Section */
+.contact-form {
+    padding: 4rem 2rem;
+    background-color: #e6f7ff;
+}
+
+.form-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.form-left, .form-right {
+    flex: 1;
+}
+
+.form-left {
+    display: flex;
+    flex-direction: column;
+}
+.contact-form{
+    gap: 2rem;
+}
+.form-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: center;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 1rem;
+
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #005580;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+button {
+    padding: 1rem;
+    background-color: #005580;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #004466;
+}
+
+/* Address Section */
+.address {
+    padding: 2rem 2rem;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.address-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Google Map Section */
+
+.class img{
+    align-items: center;
+}
+.class img:hover{
+    filter: brightness(80%);
+}
+
+.map {
+    padding: 2rem 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #005580;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.footer-links {
+    margin-top: 1rem;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #00ccff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-container {
+        flex-direction: column;
+    }
+    .form-left, .form-right {
+        width: 100%;
+    }
+}

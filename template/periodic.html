@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheduled Packages</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #fff;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #00bfff;
+            margin-bottom: 40px;
+        }
+
+        .package {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #1c1c1c;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s;
+        }
+
+        .package:hover {
+            transform: scale(1.02); /* Slight scale effect on hover */
+        }
+
+        .image {
+            flex: 0 0 150px; /* Fixed width for the image container */
+            text-align: center; /* Center the image */
+        }
+
+        .image img {
+            width: 100%; /* Make the image responsive */
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .details {
+            flex: 1; /* Allow details section to take remaining space */
+            margin-left: 20px;
+        }
+
+        .details h2 {
+            font-size: 24px;
+            color: #00bfff;
+            margin-bottom: 10px;
+            text-align: left; /* Align header text to the left */
+        }
+
+        .details .recommended {
+            background-color: #00bfff;
+            color: #121212;
+            font-size: 14px;
+            padding: 2px 6px;
+            border-radius: 4px;
+            margin-left: 10px;
+        }
+
+        ul {
+            list-style: none;
+            margin-bottom: 10px;
+            padding-left: 0; /* Remove default padding */
+        }
+
+        ul.features li {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        a {
+            color: #00bfff;
+            text-decoration: none;
+        }
+
+        button.select-btn {
+            background-color: #00bfff;
+            color: #121212;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+
+        button.select-btn:hover {
+            background-color: #008fbf;
+        }
+
+        span.time {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #bbbbbb;
+        }
+
+        /* Add media query for better responsiveness on smaller screens */
+        @media (max-width: 768px) {
+            .package {
+                flex-direction: column; /* Stack items vertically on smaller screens */
+                align-items: center; /* Center align on mobile */
+            }
+            .image {
+                margin-bottom: 15px; /* Add space below the image */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Scheduled Packages</h1>
+
+        <!-- Basic Service -->
+        <div class="package">
+            <div class="image">
+                <img src="basics.jpg" alt="Basic Service">
+            </div>
+            <div class="details">
+                <h2>Basic Service</h2>
+                <ul>
+                    <li>1000 Kms or 1 Month Warranty</li>
+                    <li>Every 5000 Kms or 3 Months (Recommended)</li>
+                </ul>
+                <ul class="features">
+                    <li>✔ Wiper Fluid Replacement</li>
+                    <li>✔ Car Wash</li>
+                    <li>✔ Engine Oil Replacement</li>
+                    <li>✔ Battery Water Top Up</li>
+                    <li>✔ Interior Vacuuming (Carpet & Seats)</li>
+                    <li><a href="#">+ 4 more View All</a></li>
+                </ul>
+                <button class="select-btn">SELECT CAR</button>
+                <span class="time">⏱ 4 Hrs Taken</span>
+            </div>
+        </div>
+
+        <!-- Standard Service -->
+        <div class="package">
+            <div class="image">
+                <img src="standard.jpg" alt="Standard Service">
+            </div>
+            <div class="details">
+                <h2>Standard Service <span class="recommended">RECOMMENDED</span></h2>
+                <ul>
+                    <li>1000 Kms or 1 Month Warranty</li>
+                    <li>Every 10,000 Kms or 6 Months (Recommended)</li>
+                </ul>
+                <ul class="features">
+                    <li>✔ Car Scanning</li>
+                    <li>✔ Battery Water Top up</li>
+                    <li>✔ Interior Vacuuming (Carpet & Seats)</li>
+                    <li>✔ Wiper Fluid Replacement</li>
+                    <li>✔ Car Wash</li>
+                    <li><a href="#">+ 10 more View All</a></li>
+                </ul>
+                <button class="select-btn">SELECT CAR</button>
+                <span class="time">⏱ 6 Hrs Taken</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

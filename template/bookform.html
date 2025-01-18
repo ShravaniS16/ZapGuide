@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your EV Service Appointment</title>
+    <style>
+        /* General reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: url('BOOKIMAGE.jpg') no-repeat center center fixed; /* Background image */
+            background-size: cover; /* Cover the entire area */
+            color: #EAEAEA; /* Light text color */
+            padding: 20px;
+        }
+
+        /* Form container */
+        .form-container {
+            background-color: rgba(26, 27, 29, 0.9); /* Darker background with some transparency */
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            max-width: 600px; /* Max width for the form */
+            margin: 20px auto; /* Center the form */
+        }
+
+        /* Form title */
+        h2 {
+            color: #00A3E0; /* Bright blue for the title */
+            margin-bottom: 20px; /* Space below the title */
+            text-align: center; /* Center the title */
+        }
+
+        /* Form elements */
+        label {
+            display: block; /* Block for labels */
+            margin-bottom: 5px; /* Space below labels */
+            color: #B0B0B0; /* Grey text */
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%; /* Full width inputs */
+            padding: 10px; /* Padding for inputs */
+            border: 1px solid #00A3E0; /* Blue border */
+            border-radius: 5px; /* Rounded corners */
+            background-color: #2A2B2D; /* Dark input background */
+            color: #EAEAEA; /* Light text color */
+            margin-bottom: 15px; /* Space between inputs */
+            transition: border-color 0.3s ease; /* Transition for border color */
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="tel"]:focus,
+        input[type="date"]:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #00BFFF; /* Lighter blue on focus */
+            outline: none; /* Remove default outline */
+        }
+
+        /* Checkbox and radio button styles */
+        input[type="checkbox"],
+        input[type="radio"] {
+            margin-right: 10px; /* Space to the right of checkboxes/radios */
+        }
+
+        /* Button styling */
+        button {
+            width: 100%; /* Full width button */
+            padding: 10px; /* Padding for button */
+            background-color: #00A3E0; /* Bright blue button */
+            color: #ffffff; /* White text color */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Transition effects */
+        }
+
+        button:hover {
+            background-color: #00BFFF; /* Lighter blue on hover */
+            transform: translateY(-3px); /* Lift effect on hover */
+        }
+
+        /* QR code section */
+        .qr-code-section {
+            margin: 15px 0; /* Space around QR code section */
+            text-align: center; /* Center the QR code */
+        }
+
+        .qr-code-section img {
+            max-width: 100%; /* Responsive QR code */
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 10px; /* Space below QR code */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .form-container {
+                padding: 20px; /* Adjusted padding for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Booking Form -->
+    <div class="form-container">
+        <form method="post" action="/submit">
+            <h2>Book Your EV Service Appointment</h2>
+
+            <h3>Customer Information</h3>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <h3>Vehicle Information</h3>
+            <label for="make">Vehicle Make:</label>
+            <select id="make" name="make" required>
+                <option value="Tesla">Tesla</option>
+                <option value="Nissan">Nissan</option>
+                <option value="Chevrolet">Chevrolet</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label for="model">Vehicle Model:</label>
+            <input type="text" id="model" name="model" required>
+
+            <label for="year">Vehicle Year:</label>
+            <input type="text" id="year" name="year" required>
+
+            <label for="vin">VIN:</label>
+            <input type="text" id="vin" name="vin" required>
+
+            <h3>Service Selection</h3>
+            <label><input type="checkbox" name="service[]" value="Periodic Services"> Periodic Services - Regular EV checkups for optimum performance</label><br>
+            <label><input type="checkbox" name="service[]" value="AC Service & Repair"> AC Service & Repair - Efficient cooling solutions for EVs</label><br>
+            <label><input type="checkbox" name="service[]" value="Battery Health Check"> Battery Health Check - Battery health checkup and replacements</label><br>
+            <label><input type="checkbox" name="service[]" value="Tyres & Wheel Care"> Tyres & Wheel Care - Wheel balancing and tyre replacements</label><br>
+            <label><input type="checkbox" name="service[]" value="Denting & Painting"> Denting & Painting - Restore your EV’s exterior with precision</label><br>
+            <label><input type="checkbox" name="service[]" value="Detailing Services"> Detailing Services - Keep your EV looking brand new with expert detailing</label><br>
+            <label><input type="checkbox" name="service[]" value="Car Spa & Cleaning"> Car Spa & Cleaning - Premium EV wash and care packages</label><br>
+            <label><input type="checkbox" name="service[]" value="Car Inspections"> Car Inspections - Complete car inspections to ensure road safety</label><br>
+            <label><input type="checkbox" name="service[]" value="Windshields & Lights"> Windshields & Lights - Replace cracked windshields or faulty lights</label><br>
+            <label><input type="checkbox" name="service[]" value="Suspension & Fitments"> Suspension & Fitments - High-quality suspension services for EVs</label><br>
+            <label><input type="checkbox" name="service[]" value="Clutch & Body Parts"> Clutch & Body Parts - Replacement and repair of essential EV parts</label><br>
+            <label><input type="checkbox" name="service[]" value="Insurance Claims"> Insurance Claims - Help with insurance claims for your EV</label><br>
+
+            <h3>Preferred Date and Time</h3>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time:</label>
+            <select id="time" name="time" required>
+                <option value="09:00">09:00 AM</option>
+                <option value="10:00">10:00 AM</option>
+                <!-- Add more time slots as needed -->
+            </select>
+
+            <h3>Additional Information</h3>
+            <label for="comments">Comments or Special Requests:</label>
+            <textarea id="comments" name="comments"></textarea>
+
+            <h3>Pickup and Delivery Options</h3>
+            <label>Do you need a pickup/delivery service?</label>
+            <label><input type="radio" name="pickup" value="yes"> Yes</label>
+            <label><input type="radio" name="pickup" value="no"> No</label>
+            <div id="pickup-address" style="display:none;">
+                <label for="pickupAddress">Pickup Address:</label>
+                <input type="text" id="pickupAddress" name="pickupAddress">
+            </div>
+
+            <h3>Payment Information</h3>
+            <label for="payment">Payment Method:</label>
+            <select id="payment" name="payment">
+                <option value="credit_card">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="qr_code">QR Code</option>
+            </select>
+
+            <div class="qr-code-section">
+                <img src="QR.png" alt="QR Code for Payment" id="qrCode" style="display:none;"> <!-- QR Code will be displayed when selected -->
+            </div>
+
+            <button type="submit">Submit Booking</button>
+        </form>
+    </div>
+
+    <script>
+        // JavaScript to handle pickup address visibility
+        const pickupRadios = document.querySelectorAll('input[name="pickup"]');
+        const pickupAddressInput = document.getElementById('pickup-address');
+
+        pickupRadios.forEach(radio => {
+            radio.addEventListener('change', function() {
+                if (this.value === 'yes') {
+                    pickupAddressInput.style.display = 'block';
+                } else {
+                    pickupAddressInput.style.display = 'none';
+                }
+            });
+        });
+
+        // JavaScript to handle QR code display
+        const paymentSelect = document.getElementById('payment');
+        const qrCodeImage = document.getElementById('qrCode');
+
+        paymentSelect.addEventListener('change', function() {
+            if (this.value === 'qr_code') {
+                qrCodeImage.style.display = 'block';
+            } else {
+                qrCodeImage.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Service Form</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .service-form-container {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            width: 350px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .service-form-container:hover {
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        p {
+            font-size: 14px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        select, input[type="text"] {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            color: #333;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        select:focus, input[type="text"]:focus {
+            border-color: #007BFF;
+        }
+
+        .submit-btn {
+            background-color: #007BFF;
+            color: white;
+            padding: 15px;
+            border: none;
+            width: 100%;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+        }
+
+        .submit-btn:active {
+            transform: translateY(1px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="service-form-container">
+        <h1>Experience The Best EV Car Services</h1>
+      
+
+        <select name="city" id="city">
+            <option value="Mumbai">Mumbai</option>
+            <!-- Add more cities if needed -->
+        </select>
+
+        <select name="car" id="car">
+            <option value="Select">Select Your Car</option>
+            <!-- Add more car options if needed -->
+        </select>
+
+        <input type="text" name="mobile" placeholder="Enter Mobile Number">
+
+        <button class="submit-btn">CHECK PRICES FOR FREE</button>
+    </div>
+
+</body>
+</html>

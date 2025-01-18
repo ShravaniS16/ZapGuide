@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - EV Car Maintenance & Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #1c1c1c;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            text-align: center;
+            color: #00bfff;
+            margin-bottom: 40px;
+        }
+
+        .contact-info, .contact-form {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        .contact-info div, .contact-form div {
+            flex: 1;
+            margin: 0 10px;
+        }
+
+        .contact-info div h3, .contact-form div h3 {
+            color: #00bfff;
+            margin-bottom: 20px;
+        }
+
+        .contact-info div p {
+            color: #ccc;
+            font-size: 16px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #333;
+            background-color: #1c1c1c;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: #00bfff;
+            color: black;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: #008ecc;
+        }
+
+        .social-icons {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .social-icons a {
+            color: #00bfff;
+            margin: 0 10px;
+            font-size: 30px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #008ecc;
+        }
+
+        .social-icons i {
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="contact-container">
+    <h1>Contact Us</h1>
+    
+    <div class="contact-info">
+        <div>
+            <h3>Our Address</h3>
+            <p>EV Car Maintenance & Services</p>
+            <p>123 Main Street, Delhi, India</p>
+            <p>Zip Code: 110001</p>
+        </div>
+        <div>
+            <h3>Email Us</h3>
+            <p>support@evservice.com</p>
+        </div>
+        <div>
+            <h3>Call Us</h3>
+            <p>+91 12345 67890</p>
+        </div>
+    </div>
+
+    <div class="contact-form">
+        <div>
+            <h3>Send Us a Message</h3>
+            <form action="#">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+    </div>
+
+    <div class="social-icons">
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://wa.me/yourwhatsapplink" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+</div>
+
+<!-- Font Awesome Icons for social media -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

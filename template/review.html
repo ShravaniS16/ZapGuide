@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV Car Services - Customer Reviews</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Full viewport height */
+            background: url('BOOKIMAGE.jpg') no-repeat center center fixed; /* Full background image */
+            background-size: cover; /* Ensure the background image covers the whole page */
+            color: #fff; /* White text */
+            display: flex; /* Flexbox for centering content */
+            flex-direction: column; /* Column layout */
+            justify-content: center; /* Center vertically */
+            align-items: center; /* Center horizontally */
+        }
+
+        .reviews-section {
+            text-align: center;
+            padding: 20px; /* Adjusted padding */
+            background: rgba(0, 0, 0, 0.7); /* Slightly transparent background for readability */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+            max-width: 800px; /* Limit width */
+            width: 90%; /* Responsive width */
+        }
+
+        .reviews-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #00bfff; /* Blue heading */
+        }
+
+        .reviews-container {
+            display: flex;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+
+        .review {
+            background-color: #333; /* Darker review boxes */
+            border-radius: 10px;
+            padding: 20px;
+            margin: 0 15px;
+            width: 300px; /* Fixed width to show multiple reviews in the scroll view */
+            flex: 0 0 auto; /* Prevent reviews from shrinking */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .review p {
+            font-size: 16px;
+            color: #ccc;
+            text-align: left;
+        }
+
+        .review-author {
+            font-weight: bold;
+            color: #00bfff; /* Blue author names */
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        .review-date {
+            color: #999;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        .rating-stars {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .stars {
+            display: flex;
+        }
+
+        .stars img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .rating-count {
+            color: #ccc;
+            margin-left: 10px;
+            font-size: 16px;
+        }
+
+        .read-more-btn {
+            background-color: #00bfff; /* Blue button */
+            color: #000;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .read-more-btn:hover {
+            background-color: #008ecc; /* Darker blue on hover */
+        }
+
+        .nav-arrows {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .arrow {
+            font-size: 30px;
+            color: #00bfff; /* Blue arrows */
+            cursor: pointer;
+            margin: 0 20px;
+            transition: color 0.3s ease;
+        }
+
+        .arrow:hover {
+            color: #008ecc; /* Darker blue on hover */
+        }
+
+        @media (max-width: 768px) {
+            .reviews-container {
+                flex-direction: row;
+            }
+
+            .review {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="reviews-section">
+        <h2>WHAT OUR CUSTOMERS SAY</h2>
+
+        <div class="rating-stars">
+            <div class="stars">
+                <img src="https://img.icons8.com/ios-filled/50/00bfff/star.png"/>
+                <img src="https://img.icons8.com/ios-filled/50/00bfff/star.png"/>
+                <img src="https://img.icons8.com/ios-filled/50/00bfff/star.png"/>
+                <img src="https://img.icons8.com/ios-filled/50/00bfff/star.png"/>
+                <img src="https://img.icons8.com/ios-filled/50/00bfff/star-half-empty.png"/>
+            </div>
+            <span class="rating-count">(4.5/5 based on 234 reviews)</span>
+        </div>
+
+        <button class="read-more-btn">READ MORE REVIEWS</button>
+
+        <div class="reviews-container" id="reviews-container">
+            <div class="review">
+                <p>"Cannot rate this garage highly enough! They have now helped me 3 times this year due to my rather problematic Seat Ibiza..."</p>
+                <div class="review-author">Sophie Evans</div>
+                <div class="review-date">4 Jul 2023</div>
+            </div>
+
+            <div class="review">
+                <p>"Rang Vasstech Northallerton due to smoke coming from my bonnet of the car, they told me to take it down and they would have a look..."</p>
+                <div class="review-author">Ian Harrison</div>
+                <div class="review-date">16 Oct 2023</div>
+            </div>
+
+            <div class="review">
+                <p>"Amazing service and great staff! My electric car was fixed faster than I expected..."</p>
+                <div class="review-author">John Doe</div>
+                <div class="review-date">25 Sep 2023</div>
+            </div>
+
+            <div class="review">
+                <p>"Best experience with an EV maintenance garage. They were honest about the cost and time required..."</p>
+                <div class="review-author">Ananya Verma</div>
+                <div class="review-date">13 Aug 2023</div>
+            </div>
+
+            <div class="review">
+                <p>"Friendly and knowledgeable staff. They made the entire process of getting my car serviced smooth and hassle-free..."</p>
+                <div class="review-author">Michael Thompson</div>
+                <div class="review-date">2 Sep 2023</div>
+            </div>
+
+            <!-- Add more reviews as needed -->
+        </div>
+
+        <div class="nav-arrows">
+            <span class="arrow" id="prev-arrow">&#171;</span>
+            <span class="arrow" id="next-arrow">&#187;</span>
+        </div>
+    </section>
+
+    <script>
+        const container = document.getElementById('reviews-container');
+        const nextArrow = document.getElementById('next-arrow');
+        const prevArrow = document.getElementById('prev-arrow');
+
+        nextArrow.addEventListener('click', () => {
+            container.scrollBy({ left: 300, behavior: 'smooth' });
+        });
+
+        prevArrow.addEventListener('click', () => {
+            container.scrollBy({ left: -300, behavior: 'smooth' });
+        });
+    </script>
+
+</body>
+</html>

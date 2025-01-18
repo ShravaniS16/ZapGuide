@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How It Works - Black and Blue Theme</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #121212; /* Black background */
+            color: #e0e0e0; /* Light gray text */
+            padding: 20px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        h2 {
+            text-align: left;
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #1e90ff; /* Blue title */
+        }
+
+        .step-container {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 150px;
+            position: relative;
+        }
+
+        .step-container::before {
+            content: "";
+            position: absolute;
+            left: 25px;
+            top: 50px;
+            height: calc(100% - 60px);
+            width: 2px;
+            background-color: #1e90ff; /* Blue vertical line */
+        }
+
+        .step-number {
+            font-size: 20px;
+            color: #121212; /* Black text for numbers */
+            background-color: #1e90ff; /* Blue background for numbers */
+            padding: 10px 15px;
+            border-radius: 50%;
+            margin-right: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .step-content {
+            flex: 1;
+        }
+
+        .step-content h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #1e90ff; /* Blue heading */
+        }
+
+        .step-content p {
+            font-size: 14px;
+            color: #b0b0b0; /* Slightly darker gray for description */
+        }
+
+        .step-image {
+            margin-left: 20px;
+        }
+
+        .step-image img {
+            width: 80px;
+            height: auto;
+            filter: brightness(0) invert(1); /* White filter effect for images to match theme */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>How ZapGuide Works?</h2>
+
+        <div class="step-container">
+            <div class="step-number">1</div>
+            <div class="step-content">
+                <h3>Select The Perfect Car Service</h3>
+                <p>From ZapGuide broad portfolio of services</p>
+            </div>
+            <div class="step-image">
+                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/services--v1.png" alt="services--v1"/>
+            </div>
+        </div>
+
+        <div class="step-container">
+            <div class="step-number">2</div>
+            <div class="step-content">
+                <h3>Schedule Free Doorstep Pick-up</h3>
+                <p>We offer free pick up and drop for all services booked</p>
+            </div>
+            <div class="step-image">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/delivery--v1.png" alt="delivery--v1"/>
+            </div>
+        </div>
+
+        <div class="step-container">
+            <div class="step-number">3</div>
+            <div class="step-content">
+                <h3>Track Your Car Service Real-Time</h3>
+                <p>We will take care of everything from here!</p>
+            </div>
+            <div class="step-image">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/order-shipped.png" alt="order-shipped"/>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

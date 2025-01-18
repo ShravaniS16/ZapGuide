@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV Car Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212; /* Dark black background */
+            color: #fff; /* White text for better readability */
+            margin: 0;
+            padding: 0;
+        }
+
+        .services-section {
+            text-align: center;
+            padding: 50px;
+            background-color: #1c1c1c; /* Slightly lighter black */
+        }
+
+        .services-section h1 {
+            font-size: 40px;
+            color: #00bfff; /* Bright blue title */
+            margin-bottom: 20px;
+        }
+
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .service-card {
+            background-color: #1f1f1f; /* Card background color - near black */
+            width: 230px;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Softer shadow */
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition on hover */
+            position: relative;
+            text-decoration: none; /* Remove underline from link */
+            color: white; /* Text color */
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px); /* Elevation effect */
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6); /* Deeper shadow on hover */
+        }
+
+        .service-card img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            font-size: 20px;
+            color: #00bfff; /* Blue color for headings */
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            font-size: 14px;
+            color: #ccc; /* Lighter grey for text */
+        }
+
+        .new-badge {
+            background-color: #00bfff; /* Blue badge */
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        }
+
+        @media (max-width: 768px) {
+            .service-card {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<section class="services-section">
+    <h1>EV Car Services</h1>
+
+    <div class="services-container">
+        <div class="service-card">
+            <a href="periodic.html">
+                <img src="https://img.icons8.com/fluency/96/calendar.png" alt="Periodic Services">
+                <h3>Periodic Services</h3>
+                <p>Regular EV checkups for optimum performance.</p>
+            </a>
+        </div>
+
+        <div class="service-card">
+            <img src="https://img.icons8.com/fluency/96/air-conditioner.png" alt="AC Service & Repair">
+            <h3>AC Service & Repair</h3>
+            <p>Efficient cooling solutions for EVs.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="https://img.icons8.com/fluency/96/car-battery.png" alt="Batteries">
+            <h3>Batteries</h3>
+            <p>Battery health checkup and replacements.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="https://img.icons8.com/fluency/96/tire.png" alt="Tyres & Wheel Care">
+            <h3>Tyres & Wheel Care</h3>
+            <p>Wheel balancing and tyre replacements.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="https://img.icons8.com/fluency/96/paint-brush.png" alt="Denting & Painting">
+            <h3>Denting & Painting</h3>
+            <p>Restore your EV’s exterior with precision.</p>
+        </div>
+
+        <div class="service-card">
+            <img width="50" height="50" src="https://img.icons8.com/ios/50/services--v1.png" alt="services--v1"/>
+            <h3>Detailing Services</h3>
+            <p>Keep your EV looking brand new with expert detailing.</p>
+        </div>
+
+        <div class="service-card">
+            <img width="48" height="48" src="https://img.icons8.com/color/48/car--v1.png" alt="car--v1"/>
+            <h3>Car Spa & Cleaning</h3>
+            <p>Premium EV wash and care packages.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="https://img.icons8.com/fluency/96/inspection.png" alt="Car Inspections">
+            <h3>Car Inspections</h3>
+            <p>Complete car inspections to ensure road safety.</p>
+        </div>
+
+        <div class="service-card">
+            <img width="50" height="50" src="https://img.icons8.com/ios/50/windscreen.png" alt="windscreen"/>
+            <h3>Windshields & Lights</h3>
+            <p>Replace cracked windshields or faulty lights.</p>
+        </div>
+
+        <div class="service-card">
+            <img width="50" height="50" src="https://img.icons8.com/ios/50/air-suspension-warning--v2.png" alt="air-suspension-warning--v2"/>
+            <h3>Suspension & Fitments</h3>
+            <p>High-quality suspension services for EVs.</p>
+        </div>
+
+        <div class="service-card">
+            <img width="64" height="64" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-clutch-car-service-flaticons-lineal-color-flat-icons.png" alt="external-clutch-car-service-flaticons-lineal-color-flat-icons"/>
+            <h3>Clutch & Body Parts</h3>
+            <p>Replacement and repair of essential EV parts.</p>
+        </div>
+
+        <div class="service-card">
+            <img width="50" height="50" src="https://img.icons8.com/ios/50/medical-insurance--v1.png" alt="medical-insurance--v1"/>
+            <h3>Insurance Claims</h3>
+            <p>Help with insurance claims for your EV.</p>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

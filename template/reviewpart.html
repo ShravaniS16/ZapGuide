@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews - EV Car Maintenance</title>
+    <style>
+        /* General reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        /* Customer Review Section */
+        .reviews-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .reviews-section h2 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .reviews-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: start;
+            margin-top: 30px;
+        }
+
+        .review-box {
+            width: 45%;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            text-align: left;
+        }
+
+        .review-box p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .review-author {
+            font-weight: bold;
+            color: #0066cc;
+            margin-bottom: 5px;
+        }
+
+        .review-date {
+            font-size: 14px;
+            color: #888;
+        }
+
+        /* Star Ratings */
+        .rating {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .star {
+            width: 25px;
+            height: 25px;
+            background-color: #00bfa5;
+            clip-path: polygon(50% 0%, 63% 38%, 98% 35%, 75% 59%, 82% 100%, 50% 75%, 18% 100%, 25% 59%, 2% 35%, 37% 38%);
+            margin-right: 5px;
+        }
+
+        .half-star {
+            width: 12.5px;
+            height: 25px;
+            background-color: #00bfa5;
+            clip-path: polygon(50% 0%, 63% 38%, 98% 35%, 75% 59%, 82% 100%, 50% 75%, 18% 100%, 25% 59%, 2% 35%, 37% 38%);
+        }
+
+        /* Read More Button */
+        .read-more-btn {
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 16px;
+            margin-top: 30px;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+        }
+
+        .read-more-btn:hover {
+            background-color: #ff3333;
+        }
+
+        /* Arrow navigation */
+        .arrows {
+            margin-top: 40px;
+        }
+
+        .arrow {
+            font-size: 30px;
+            color: #0066cc;
+            cursor: pointer;
+            transition: color 0.3s ease;
+            margin: 0 20px;
+        }
+
+        .arrow:hover {
+            color: #00bfa5;
+        }
+
+        /* Responsive for mobile */
+        @media (max-width: 768px) {
+            .reviews-container {
+                flex-direction: column;
+            }
+
+            .review-box {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="reviews-section">
+        <h2>What Our Customers Say</h2>
+        
+        <!-- Star Rating Section -->
+        <div class="rating">
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="half-star"></div>
+        </div>
+
+        <!-- Read More Button -->
+        <a href="#" class="read-more-btn">Read More Reviews</a>
+
+        <!-- Customer Review Boxes -->
+        <div class="reviews-container">
+            <!-- Review 1 -->
+            <div class="review-box">
+                <p>"I can't thank this EV service enough! They were able to diagnose and fix a battery issue in no time. Their attention to detail and the way they explained everything made me feel at ease. Truly experts in the EV world!"</p>
+                <div class="review-author">Sophie Evans</div>
+                <div class="review-date">4 Jul 2023</div>
+            </div>
+            
+            <!-- Review 2 -->
+            <div class="review-box">
+                <p>"The team at EV Service Center went above and beyond to ensure my electric car was in top shape. From software updates to diagnostic checks, they were efficient and extremely knowledgeable. Would highly recommend!"</p>
+                <div class="review-author">Ian Harrison</div>
+                <div class="review-date">16 Oct 2023</div>
+            </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <div class="arrows">
+            <span class="arrow">&laquo;</span>
+            <span class="arrow">&raquo;</span>
+        </div>
+    </div>
+
+</body>
+</html>

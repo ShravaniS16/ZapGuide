@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZapGuid Benefits</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212; /* Dark background */
+            color: #fff; /* White text */
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center content vertically */
+            align-items: center; /* Center content horizontally */
+            overflow: hidden; /* Prevent scrolling */
+        }
+
+        .benefits {
+            text-align: center;
+            padding: 20px; /* Adjust padding for space */
+            width: 100%; /* Full width */
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #00aaff; /* Blue title */
+        }
+
+        .benefits-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            overflow-x: auto; /* Allows horizontal scrolling on smaller screens */
+            max-width: 100%; /* Ensure it fits within the viewport */
+            padding: 10px; /* Add padding to container */
+        }
+
+        .benefit {
+            background-color: #1e1e1e; /* Darker card background */
+            border: 1px solid #333; /* Slightly lighter border */
+            border-radius: 10px;
+            padding: 20px;
+            width: 18%; /* Adjust width to fit all benefits in a row */
+            min-width: 220px; /* Ensures they don't shrink too much on small screens */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease-in-out;
+            margin: 0 10px; /* Adds spacing between the benefit boxes */
+        }
+
+        .benefit:hover {
+            transform: scale(1.05);
+        }
+
+        .benefit-icon {
+            font-size: 40px;
+            color: #00aaff; /* Blue icon color */
+            margin-bottom: 20px;
+        }
+
+        .benefit-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #00aaff; /* Blue title for benefits */
+        }
+
+        .benefit-description {
+            font-size: 16px;
+            color: #ccc; /* Lighter gray for descriptions */
+        }
+
+        /* For very small screens, we'll allow scrolling */
+        @media (max-width: 768px) {
+            .benefits-container {
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                overflow-x: scroll;
+            }
+
+            .benefit {
+                flex-shrink: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="benefits">
+        <h1>ZapGuide BENEFITS</h1>
+        <div class="benefits-container">
+            <div class="benefit">
+                <div class="benefit-icon">⚡</div>
+                <div class="benefit-title">Comprehensive EV Expertise</div>
+                <div class="benefit-description">Our team of certified technicians specializes in electric vehicle (EV) systems, ensuring precise diagnostics, repairs, and maintenance for optimal performance and longevity of your EV.</div>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">🌍</div>
+                <div class="benefit-title">Sustainable and Eco-Friendly Solutions</div>
+                <div class="benefit-description">We prioritize eco-friendly practices in every service, using sustainable products and processes that minimize environmental impact, aligning with global efforts to reduce carbon emissions.</div>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">🔧</div>
+                <div class="benefit-title">Cutting-Edge Technology Integration</div>
+                <div class="benefit-description">Leveraging the latest advancements in EV maintenance tools and technology, we ensure efficient and accurate service, enhancing the reliability and safety of your vehicle.</div>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">🛠️</div>
+                <div class="benefit-title">Flexible and Convenient Service Plans</div>
+                <div class="benefit-description">Our tailored service packages offer flexibility, allowing you to choose maintenance plans that suit your needs, schedule, and budget, ensuring seamless care for your EV.</div>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">💬</div>
+                <div class="benefit-title">Customer-Centric Support and Transparency</div>
+                <div class="benefit-description">We focus on delivering exceptional customer service with clear communication, transparent pricing, and dedicated support to keep you informed and confident throughout the maintenance process.</div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

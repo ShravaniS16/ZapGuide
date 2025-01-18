@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV Car Services FAQ</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('BOOKIMAGE.jpg'); /* Add your background image URL */
+            background-size: cover; /* Cover the entire body */
+            background-position: center; /* Center the background */
+            background-repeat: no-repeat; /* Prevent repeating */
+            color: #fff; /* White text */
+            margin: 0;
+            padding: 0;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8); /* Slightly transparent dark background for readability */
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .faq-section {
+            background-color: #1c1c1c; /* Dark background for section */
+            border-radius: 8px;
+            margin-bottom: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .faq-question {
+            cursor: pointer;
+            padding: 15px;
+            font-size: 18px;
+            background-color: #3f92ae; /* Blue background for question */
+            color: black;
+            border: none;
+            outline: none;
+            text-align: left;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background-color: #356376; /* Darker blue on hover */
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 15px;
+            background-color: #000000; /* Dark grey for answer background */
+            color: #ccc; /* Light grey text for answer */
+            border-top: 1px solid #4e8699;
+        }
+
+        .active + .faq-answer {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .faq-question {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="faq-container">
+    <h1 style="color: #00bfff; text-align: center;">EV Car Services FAQ</h1>
+
+    <div class="faq-section">
+        <button class="faq-question">How long will my EV maintenance take?</button>
+        <div class="faq-answer">
+            <p>EV maintenance generally takes 4 to 5 hours, depending on the service required.</p>
+        </div>
+    </div>
+
+    <div class="faq-section">
+        <button class="faq-question">What is the cost of a full EV inspection?</button>
+        <div class="faq-answer">
+            <p>The cost of a full EV inspection can range from 1000-1200 depending on the provider and the type of vehicle.</p>
+        </div>
+    </div>
+
+    <div class="faq-section">
+        <button class="faq-question">What types of services does my EV need regularly?</button>
+        <div class="faq-answer">
+            <p>Regular services include battery checks, tire rotation, software updates, and cooling system maintenance.</p>
+        </div>
+    </div>
+
+    <div class="faq-section">
+        <button class="faq-question">How often should I check my EV's battery?</button>
+        <div class="faq-answer">
+            <p>Battery checks should be done every 6 months or 10,000 miles to ensure optimal performance.</p>
+        </div>
+    </div>
+
+    <div class="faq-section">
+        <button class="faq-question">What happens if I skip a maintenance service?</button>
+        <div class="faq-answer">
+            <p>Skipping maintenance can lead to reduced performance, lower battery life, and potential safety risks.</p>
+        </div>
+    </div>
+
+    <div class="faq-section">
+        <button class="faq-question">How can I book an EV maintenance service?</button>
+        <div class="faq-answer">
+            <p>You can book a service online through our website, or by calling our customer service number.</p>
+        </div>
+    </div>
+
+    <div class="faq-section">
+        <button class="faq-question">Do you offer emergency roadside assistance for EVs?</button>
+        <div class="faq-answer">
+            <p>Yes, we offer 24/7 emergency roadside assistance, including towing and on-site repairs for EVs.</p>
+        </div>
+    </div>
+
+    <div class="faq-section">
+        <button class="faq-question">How long does an EV battery last?</button>
+        <div class="faq-answer">
+            <p>On average, an EV battery lasts between 8 to 10 years, depending on usage and maintenance.</p>
+        </div>
+    </div>
+
+    <div class="faq-section">
+        <button class="faq-question">Is software update necessary for my EV?</button>
+        <div class="faq-answer">
+            <p>Yes, software updates ensure your EV is running with the latest features, safety enhancements, and optimal performance settings.</p>
+        </div>
+    </div>
+
+    <div class="faq-section">
+        <button class="faq-question">How can I extend my EV's battery life?</button>
+        <div class="faq-answer">
+            <p>To extend your EV's battery life, avoid frequent fast charging, keep the battery between 20%-80%, and park in a cool environment.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    const faqQuestions = document.querySelectorAll('.faq-question');
+
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', () => {
+            question.classList.toggle('active');
+            const answer = question.nextElementSibling;
+            if (answer.style.display === 'block') {
+                answer.style.display = 'none';
+            } else {
+                answer.style.display = 'block';
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
